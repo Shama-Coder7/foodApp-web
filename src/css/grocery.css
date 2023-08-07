@@ -1,0 +1,278 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.search_main_section {
+    width: 100%;
+    float:right;
+    margin-top: 30px;
+  }
+  .laft_search_panel {
+    width: 22%;
+    float: left;
+    padding: 0 0 15px 0;
+  }
+  .right_search_panel {
+    float: right;
+    width: 78%;
+    padding: 0 0 0 10px;
+    border-left: 1px solid #dbdddd;
+  }
+  .event-sort {
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    margin: 6px 0 0 0;
+    line-height: 24px;
+  }
+  .sort-filter {
+    float: right;
+    width: auto;
+  }
+  .sort-select {
+    height: 37px;
+    border: 1px solid #cccbcb;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #262626;
+    padding: 5px 30px 5px 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff url('../images/drp_arw.png') no-repeat right 6px center;
+    cursor: pointer;
+    border-radius: 1px;
+  }
+  .sort-filter p {
+    float: left;
+    width: auto;
+    color: #030303;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 12px !important;
+    text-transform: uppercase;
+    line-height: 37px;
+    margin-bottom: 0 !important;
+  }
+  .evnt_shot_by_main {
+    width: 99.5%;
+    float: right;
+    border-bottom: 1px solid #e3e3e3;
+    border-top: 1px solid #e3e3e3;
+    padding: 12px 0;
+    margin: 0 0 25px 0;
+  }
+  .laft_search_panel h3 {
+    font-size: 19px;
+    color: #f78817;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
+    font-weight: 500;
+  }
+  .search-input {
+    border: 1px solid #8a92a3;
+    padding: 1px 40px 0 15px;
+    height: 44px;
+    width: 93%;
+    margin: 0 0 18px 0;
+    color: #706d6e;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+  }
+  .search_icon {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+  .slectt {
+    border: 1px solid #8a92a3;
+    padding: 2px 40px 0 12px;
+    height: 44px;
+    width: 93%;
+    margin: 0 0 25px 0;
+    color: #706d6e;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    background: url(../images/drp_arw.png) no-repeat 98% 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .mobile_filter {
+    display: none;
+  }
+  .search_label {
+    font-size: 16px;
+    color: #222a2f;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #dbdddd;
+    padding-bottom: 8px;
+    margin-bottom: 11px;
+  }
+  .c_ul {
+    width: 100%;
+    float: left;
+  }
+  .contect_container_checkBox {
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 17px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right: 0;
+    line-height: 18px;
+    color: #474644;
+  }
+  .contect_container_checkBox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .contect_container_checkBox input:checked ~ .contect_checkmark {
+    background-color: #ed3036;
+    border: none;
+  }
+  .contect_checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 17px;
+    background-color: #fff;
+    border: 2px solid #b5b5b5;
+    border-radius: 2px;
+  }
+  .contect_checkmark::after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+  .contect_container_checkBox .contect_checkmark::after {
+    left: 6px;
+    top: 3px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .contect_container_checkBox input:checked ~ .contect_checkmark::after {
+    display: block;
+  }
+  
+  .ui-state-default,
+  .ui-widget-content .ui-state-default,
+  .ui-widget-header .ui-state-default,
+  .ui-button,
+  html .ui-button.ui-state-disabled:hover,
+  html .ui-button.ui-state-disabled:active {
+    border: 1px solid #ed3036 !important;
+  }
+  
+  .slider_rnge {
+    float: left;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+  }
+  .search-submit1 {
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    padding: 2px 24px 0 24px;
+    background: #ed3036;
+    border-radius: 3px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    margin: 16px 0px 15px 0;
+    height: 38px;
+  }
+  .search-submit1:hover {
+    background: #000;
+    color: #fff;
+  }
+  .slider_rnge .ui-state-default,
+  .slider_rnge .ui-widget-content .ui-state-default,
+  .slider_rnge .ui-widget-header .ui-state-default {
+    border-radius: 50% !important;
+    height: 13px !important;
+    top: -4px !important;
+    width: 13px !important;
+  }
+  .slider_rnge .ui-slider-horizontal {
+    background: #3c3b37 none repeat scroll 0 0 !important;
+    border: medium none !important;
+    height: 5px !important;
+    margin: 0;
+  }
+  #amount {
+    border: none !important;
+    margin-top: 18px;
+    color: #555555;
+    font-size: 16px;
+    margin-left: -15px;
+    font-weight: 700;
+  }
+  .slider_rnge .ui-state-default,
+  .slider_rnge .ui-widget-content .ui-state-default,
+  .slider_rnge .ui-widget-header .ui-state-default {
+    background: #ed3036 !important;
+  }
+  .ui-slider .ui-slider-range:last-child {
+    background: #ed3036 !important;
+  }
+  .range-text {
+    padding-left: 10px;
+    color: #555555;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .srch_pic_box {
+	height: 174px;
+}
+
+.search_proo {
+	width: 32%;
+}
+.srch_pic_box {
+    height: 152px;
+}
+.srch_dtls_box {
+	margin: 8px 0 0px 0;
+}
+.sort-filter {
+    float: left;
+    width: 100%;
+    margin: 12px 0 0 0px;
+}
+  
