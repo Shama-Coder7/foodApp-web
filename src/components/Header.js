@@ -25,7 +25,9 @@ const Header = () => {
   return (
     <div className="flex justify-between bg-pink-100 shadow-lg sm:bg-yellow-50 lg:bg-green-50">
       <div>
-        <img src={LOGO_IMG} className="logo w-20 h-30 mx-12 py-5" />
+        <Link to="/">
+          <img src={LOGO_IMG} className="logo w-20 h-30 mx-12 py-5" />
+        </Link>
       </div>
       <div className="flex items-center">
         <ul className="text-20 flex list-none flex p-4 m-4">
@@ -48,7 +50,10 @@ const Header = () => {
 
           <li className="px-4 font-bold text-xl">
             <Link to="/cartpage">
-             <div className='flex'><AiOutlineShoppingCart /> <p className='text-xs text-inherit'>{cartItems.length}</p></div> 
+              <div className="flex">
+                <AiOutlineShoppingCart />{' '}
+                <p className="text-xs text-inherit">{cartItems.length}</p>
+              </div>
             </Link>
           </li>
 

@@ -17,7 +17,7 @@ const RestaurantCard = (props) => {
 
   const { loggedInUser } = useContext(UserContext);
   return (
-    <div className="m-4 p-3 h-[425px] w-[300px] rounded-lg bg-gray-100 hover:bg-gray-300">
+    <div className="m-2 p-3 h-auto w-[300px] rounded-lg bg-green-50 hover:bg-green-100">
       <div>
         {' '}
         <img
@@ -27,7 +27,7 @@ const RestaurantCard = (props) => {
         />
       </div>
 
-      <div className='mt-6'>
+      <div className='mt-4'>
         <h3 className="font-bold">{name}</h3>
         <p>{cuisines.join(', ')}</p>
         <h4>{area}</h4>

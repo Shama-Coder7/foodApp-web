@@ -81,14 +81,14 @@ function Body() {
         <div className="search m-4 p-4">
           <input
             type="text"
-            className="py-1 border border-solid border-black"
+            className=" border border-solid border-black"
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
             }}
           />
           <button
-            className="px-5 py-2 bg-green-100 m-4 rounded-lg"
+            className="px-5 py-1 bg-green-100 m-4 rounded-lg"
             onClick={() => {
               // filter the restaurant cards and update the UI
               const filteredRestaurant = restList.filter((res) =>
