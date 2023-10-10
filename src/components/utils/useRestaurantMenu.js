@@ -8,7 +8,7 @@ const useRestaurantMenu = (resId) => {
 
   useEffect(() => {
     fetchMenu();
-    console.log('menu');
+    // console.log('menu');
   }, []); // it will be called only once.
 
   const fetchMenu = async () => {
@@ -16,10 +16,10 @@ const useRestaurantMenu = (resId) => {
 
     const json = await data.json();
 
-    console.log(json);
-    console.log(MENU_API);
+    // console.log(json);
+    // console.log(MENU_API);
     setResInfo(json.data);
-    console.log(json.data);
+    // console.log(json.data);
   };
   return resInfo;
 };

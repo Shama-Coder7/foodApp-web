@@ -4,6 +4,8 @@ import UserContext from './utils/UserContext';
 
 const RestaurantCard = (props) => {
   const { resData } = props;
+
+  // console.log(resData);
   const {
     name,
     cuisines,
@@ -17,9 +19,11 @@ const RestaurantCard = (props) => {
 
   const { loggedInUser } = useContext(UserContext);
   return (
-    <div className="m-2 p-3 h-auto w-[300px] rounded-lg bg-green-50 hover:bg-green-100">
+    <div
+      data-testid="res-Card"
+      className="m-2 p-3 h-auto w-[300px] rounded-lg bg-green-50 hover:bg-green-100"
+    >
       <div>
-        {' '}
         <img
           className="biryani"
           alt="food"
@@ -27,7 +31,7 @@ const RestaurantCard = (props) => {
         />
       </div>
 
-      <div className='mt-4'>
+      <div className="mt-4">
         <h3 className="font-bold">{name}</h3>
         <p>{cuisines.join(', ')}</p>
         <h4>{area}</h4>

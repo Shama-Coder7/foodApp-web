@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CategoryItemList from './CategoryItemList';
 
 const RestaurantCategory = ({ data, showItems, setShowIndex }) => {
-  console.log('rc', data);
+  // console.log('rc', data);
   //all the restaurantcategory have its own showItems.
   const [showData, setShowData] = useState(false);
 

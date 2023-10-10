@@ -15,7 +15,7 @@ const Header = () => {
   //contextApi
 
   const { loggedInUser } = useContext(UserContext);
-  console.log(loggedInUser);
+  // console.log(loggedInUser);
 
   //subscribing to the store using selector
 
@@ -51,7 +51,7 @@ const Header = () => {
           <li className="px-4 font-bold text-xl">
             <Link to="/cartpage">
               <div className="flex">
-                <AiOutlineShoppingCart />{' '}
+                <AiOutlineShoppingCart />
                 <p className="text-xs text-inherit">{cartItems.length}</p>
               </div>
             </Link>

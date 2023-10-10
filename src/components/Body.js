@@ -36,7 +36,7 @@ function Body() {
     );
     const json = await data.json();
 
-    console.log('all-data', json);
+    // console.log('all-data', json);
     // setRestList(json.data.cards[2].data.data.cards);
     // setRestList(json?.data?.cards[2]?.data?.data?.cards); //optional Chaining
 
@@ -69,7 +69,7 @@ function Body() {
   if (onlineStatus === false)
     return <h2>You're offline, Please check your internet connection</h2>;
 
-  console.log('body-rendered');
+  // console.log('body-rendered');
 
   const { loggedInUser, setUserName } = useContext(UserContext);
 
@@ -81,6 +81,7 @@ function Body() {
         <div className="search m-4 p-4">
           <input
             type="text"
+            data-testid="searchInput"
             className=" border border-solid border-black"
             value={searchText}
             onChange={(e) => {
@@ -91,7 +92,7 @@ function Body() {
             className="px-5 py-1 bg-green-100 m-4 rounded-lg"
             onClick={() => {
               // filter the restaurant cards and update the UI
-              const filteredRestaurant = restList.filter((res) =>
+              const filteredRestaurant = restList?.filter((res) =>
                 res.info.name.toLowerCase().includes(searchText.toLowerCase())
               );
               setFilteredRestaurant(filteredRestaurant);
@@ -103,11 +104,11 @@ function Body() {
         <button
           className=" m-12 p-2 px-2 py-1 bg-green-300 rounded"
           onClick={() => {
-            console.log('ButtonClicked');
+            // console.log('ButtonClicked');
             //filter logic will be here
 
             const filteredList = restList.filter(
-              (res) => res.info.avgRating > 4
+              (res) => res.info.avgRating > 4.4
             );
             setFilteredRestaurant(filteredList);
             console.log('filteredList');
@@ -119,14 +120,14 @@ function Body() {
           Top Rated Restaurants
         </button>
 
-      <div className="search m-2 p-2 flex items-center">
-        <label>UserName:</label>
-        <input
-          className="border border-black px-3 m-2"
-          value={loggedInUser}
-          onChange={(e) => setUserName(e.target.value)}
-        />
-      </div>
+        <div className="search m-2 p-2 flex items-center">
+          <label>UserName:</label>
+          <input
+            className="border border-black px-3 m-2"
+            value={loggedInUser}
+            onChange={(e) => setUserName(e.target.value)}
+          />
+        </div>
       </div>
 
       <div className="flex justify-center flex-wrap">
